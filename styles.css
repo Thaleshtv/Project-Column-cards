@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+:root {
+    --orange-sedans:hsl(31, 77%, 52%);
+    --blue-surv:hsl(184, 100%, 22%);
+    --blue-luxury:hsl(179, 100%, 13%);
+    --very-white:hsl(0, 0%, 95%);  
+    --transparent-white:hsla(0, 0%, 100%, 0.75);
+  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1440px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7.7rem;
+}
+
+.container > div {
+    max-width: 10rem;  
+}
+
+.container .sedans {
+    background-color: var(--orange-sedans );
+    padding: 2rem;
+}
+
+.container .suvs {
+   background-color: var( --blue-surv);
+   padding: 2rem;
+   
+}
+
+.container .luxury {
+    background-color: var(--blue-luxury);
+    padding: 2rem;
+
+}
+
+.container  h1{  
+    font-family:"Lexend Deca";
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--transparent-white);
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    letter-spacing: 0;
+}
+
+.container p {
+    font-family: "Big Shoulders Display";
+    font-weight: 400;
+    color: var(--transparent-white);
+}
+
+.container  .sedans button {
+    margin-top: 4rem;
+    background-color: var( --very-white);
+    text-decoration: none;
+    color: var(--orange-sedans );
+    padding: 0.7rem  1.5rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.container .suvs button {
+    margin-top: 4rem;
+    color: var( --blue-surv);
+    background-color: var( --very-white);
+    text-decoration: none;
+    padding: 0.7rem  1.5rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.container .luxury button {
+    margin-top: 4rem;
+    color: var(--blue-luxury);
+    background-color: var( --very-white);
+    text-decoration: none;
+    padding: 0.7rem  1.5rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width:444) {
+    .container {
+        max-width: 375px;
+    }
+}
+
+img {
+    max-width: 2.7em;
+}
